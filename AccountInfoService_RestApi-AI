@@ -1,7 +1,7 @@
 @RestResource(urlMapping='/accountsInfo/*')
 global class AccountInfoService_RestApi {
     
-    @HttpGetter have to delete as get
+    @HttpGetter and Setter delete Test
     global static AccountDetailsResponse getAccountDetails() {
         RestRequest req = RestContext.request;
         RestResponse res = RestContext.response;
