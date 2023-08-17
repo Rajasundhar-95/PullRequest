@@ -9,7 +9,7 @@ global class AccountInfoService_RestApi {
         String accountId = req.requestURI.substring(req.requestURI.lastIndexOf('/') + 1);
          AccountDetailsResponse response = new AccountDetailsResponse();
         
-        if(string.isBlank(accountId)){  // dont give accountId==null it will throw error, use isBlank instead of accountId
+        if(string.isBlank(accountId)){  // Don't use accountId==null it will throw error, use isBlank instead of accountId
             response.success = false;
             response.message = 'Account ID is required';
             res.statusCode = 404;
@@ -32,6 +32,7 @@ global class AccountInfoService_RestApi {
         
         return response;
     }
+//Wrapper Class
      global class AccountDetailsResponse {
         global Boolean false;
         global String msg;
